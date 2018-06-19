@@ -5,6 +5,9 @@
  * @package leot-fi-amp
  */
 
+// Deny direct access
+if ( ! defined('ABSPATH') ) exit;
+
 function portfolio_add_admin_page() {
     add_menu_page(
         __( 'Portfolio Theme Settings', 'leotoikka' ),

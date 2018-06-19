@@ -5,6 +5,9 @@
  * @package leot-fi-amp
  */
 
+// Deny direct access
+if ( ! defined('ABSPATH') ) exit;
+
 if ( function_exists( 'register_field_group' ) ) {
 	register_field_group( array (
 		'id' => 'acf_resume-page-fields',

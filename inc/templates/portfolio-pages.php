@@ -5,6 +5,9 @@
  * @package leot-fi-amp
  */
 
+// Deny direct access
+if ( ! defined('ABSPATH') ) exit;
+
 settings_errors();
 ?>
 

@@ -5,6 +5,9 @@
  * @package leot-fi-amp
  */
 
+// Deny direct access
+if ( ! defined('ABSPATH') ) exit;
+
 function portfolio_settings_profile_picture() {
     $picture = esc_attr( get_option( 'profile_picture' ) );
     if ( empty( $picture ) ) {

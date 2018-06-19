@@ -5,6 +5,9 @@
  * @package leot-fi-amp
  */
 
+// Deny direct access
+if ( ! defined('ABSPATH') ) exit;
+
 function portfolio_remove_version_css_js( $src ) {
   return strpos( $src, 'ver=' ) ? remove_query_arg( 'ver', $src ) : $src;
 }
