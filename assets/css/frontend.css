@@ -1,0 +1,140 @@
+/**
+ * Frontend style CSS file
+ *
+ * @package leot-fi-amp
+ */
+
+/*******************************
+ *          HEADER             *
+ ******************************/
+#header-menu {
+  list-style-type: none;
+}
+.header-image {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header-container {
+	display: block;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+.navbar {
+  margin-top: 100px;
+}
+.navbar-nav {
+  float: none;
+  display: inline-block;
+}
+.navbar-nav>li>a {
+  color: white;
+  font-size: 1.3em;
+}
+.navbar-nav>li>a:hover, .navbar-nav>li>a:active, .navbar-nav>li>a:focus {
+  background-color: rgba(255, 0, 0, 0);
+}
+#header-title-container {
+  padding-top: 7.5em;
+  width: 50%;
+  margin: 0 auto;
+}
+#header-title {
+  font-size: 5em;
+  font-weight: bold;
+  font-family: 'Dancing Script', sans-serif;
+}
+#header-title>a, #header-title>a:hover {
+  text-decoration: none;
+  color: white;
+}
+#header-description {
+  color: white;
+  font-size: 1.5em;
+}
+
+/*******************************
+ *         UNIVERSAL           *
+ ******************************/
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  background-color: black;
+}
+.leotoikka-wrapper {
+  padding: 8em 0;
+  background-color: #ececec;
+  color: black;
+}
+
+/*******************************
+ *         404 page            *
+ ******************************/
+.not-found-title, .not-found-content {
+  text-align: center;
+}
+
+/*******************************
+ *           @MEDIA            *
+ ******************************/
+@media (max-width:770px) {
+  body {
+    font-size: 13px;
+  }
+  .header-container {
+    height: 700px;
+  }
+  .social-media-wrapper {
+    min-height: 3em;
+    min-width: 2em;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2em;
+  }
+  .twitter-logo, .facebook-logo, .github-logo, .linkedin-logo {
+    display: inline-block;
+    margin: 0 auto;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    padding-left: 5em;
+    height: 40px;
+    width: 36px;
+  }
+  .twitter-link, .facebook-link, .github-link, .linkedin-link {
+    opacity: 0.8;
+  }
+}
+
+@media (min-width: 770px) {
+  body{
+    font-size: 15px;
+  }
+  .header-container {
+    height: 500px;
+  }
+  .social-media-wrapper {
+    float: right;
+    min-height: 3em;
+    min-width: 2em;
+    display: block
+  }
+  .twitter-logo, .facebook-logo, .github-logo, .linkedin-logo {
+    display: inline-block;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    padding-left: 4em;
+    height: 50px;
+    width: 45px;
+  }
+  .twitter-link, .facebook-link, .github-link, .linkedin-link {
+    opacity: 0.5;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+  }
+  .twitter-link:hover, .facebook-link:hover, .github-link:hover, .linkedin-link:hover {
+    opacity: 1;
+  }
+}
