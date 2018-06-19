@@ -25,6 +25,9 @@ if ( ! defined('ABSPATH') ) exit;
     <!-- AMP Boilerplate code (ugly but mustuse...) -->
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
+    <!-- AMP sidebar script -->
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+
     <!-- All styles have to be in the HTML head -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway">
     <style amp-custom>
@@ -343,6 +346,18 @@ if ( ! defined('ABSPATH') ) exit;
   </head>
 
   <body <?php body_class(); ?>>
+    <!-- Header nav menu -->
+    <amp-sidebar id="sidebar1" layout="nodisplay" side="right">
+      <?php
+      wp_nav_menu(
+        array(
+          'theme_location' => 'primary',
+          'container' => false
+        )
+      );
+      ?>
+    </amp-sidebar>
+
     <header>
 
       <!-- Header title and description -->
@@ -356,18 +371,5 @@ if ( ! defined('ABSPATH') ) exit;
           <?php bloginfo('description'); ?>
         </div><!-- .header-description -->
       </div><!-- .header-title-container -->
-
-      <!-- Header nav menu -->
-      <nav class="nav-container">
-        <?php
-        wp_nav_menu(
-          array(
-            'theme_location' => 'primary',
-            'container' => false,
-            'menu_class' => 'nav navbar-nav'
-          )
-        );
-        ?>
-      </nav><!--.nav-container -->
 
     </header>
