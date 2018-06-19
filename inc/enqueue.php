@@ -9,15 +9,6 @@
 if ( ! defined('ABSPATH') ) exit;
 
 /* =================================
-ENQUEUE FRONTEND STYLES AND SCRIPTS
-================================= */
-function portfolio_enqueue_scripts() {
-  // NOTE: Fonts should be moved to local directory for speed optimization
-  wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Dancing+Script|Raleway', null, 'all' );
-}
-add_action('wp_enqueue_scripts', 'portfolio_enqueue_scripts');
-
-/* =================================
 ENQUEUE ADMIN STYLES AND SCRIPTS
 ================================= */
 function portfolio_enqueue_admin_scripts() {
