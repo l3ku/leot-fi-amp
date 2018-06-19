@@ -86,6 +86,7 @@ if ( ! defined('ABSPATH') ) exit;
         color: black;
         font-size: 1.5em;
         text-align: center;
+        font-family: 'Raleway', sans-serif;
       }
 
       /*******************************
@@ -240,6 +241,7 @@ if ( ! defined('ABSPATH') ) exit;
         padding: 1em;
         margin: 0 auto;
         width: 50%;
+        margin-top: 2em;
       }
       #footer-copyright {
         font-size: 1.2em;
@@ -367,9 +369,7 @@ if ( ! defined('ABSPATH') ) exit;
             <?php bloginfo('name') ?>
           </a>
         </h1>
-        <div id="header-description">
-          <?php bloginfo('description'); ?>
-        </div><!-- .header-description -->
+        <h2 id="header-description"><?php bloginfo('description'); ?></h2>
       </div><!-- .header-title-container -->
 
     </header>
