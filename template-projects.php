@@ -9,10 +9,16 @@
 if ( ! defined('ABSPATH') ) exit;
 
 get_header();
-?>
 
-<?php $wp_all_query = new WP_Query( array( 'post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 3 ) ); ?>
-<?php if ( $wp_all_query->have_posts() ) : ?>
+$wp_all_query = new WP_Query(
+  array(
+    'post_type' => 'post',
+    'post_status' => 'publish',
+    'posts_per_page' => 3
+  )
+);
+
+if ( $wp_all_query->have_posts() ) : ?>
 <div class="container-fluid project-wrapper">
   <?php while ( $wp_all_query->have_posts() ) : $wp_all_query->the_post(); ?>
     <div class="row project-row">
@@ -26,8 +32,8 @@ get_header();
           <?php if ( has_post_thumbnail() ): ?>
             <a href="<?php the_permalink(); ?>">
               <amp-img class="img-responsive center-block project-preview-image"
-                src="<?php the_post_thumbnail_url( 'large' ); ?>"
-                alt="<?php esc_attr_e( 'Project preview image', 'leotoikka' ); ?>"></amp-img>
+                src="<?php the_post_thumbnail_url('large'); ?>"
+                alt="<?php esc_attr_e('Project preview image', 'leotoikka'); ?>"></amp-img>
             </a>
           <?php endif; ?>
         </div><!-- .col-md-5 .col-xs-12 -->

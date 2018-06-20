@@ -37,10 +37,10 @@ if ( ! defined('ABSPATH') ) exit;
       </div><!-- .social-media-wrapper -->
 
       <!-- Copyright -->
-      <div id="footer-copyright">
+      <div class="footer-copyright">
         &copy;
         <a href="<?php echo get_option('home'); ?>">
-          Leo Toikka
+          <?php bloginfo('name') ?>
         </a> <?php echo date('Y'); ?>
       </div>
 
