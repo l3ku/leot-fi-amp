@@ -8,7 +8,6 @@
 // Deny direct access
 if ( ! defined('ABSPATH') ) exit;
 
-wp_footer();
 ?>
 
 <div class="footer-wrapper">
