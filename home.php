@@ -15,7 +15,7 @@ get_header();
   <!-- First row contains profile image and brief info -->
   <div class="row">
     <div class="col-xs-12 col-md-2">
-      <amp-img class="img-circle center-block" id="personal-image"
+      <amp-img class="img-circle center-block" class="personal-image"
         src="<?php echo esc_url( get_option( 'profile_picture' ) ); ?>"
         alt="<?php esc_attr_e( 'Picture of me', 'leotoikka' ); ?>"></amp-img>
     </div><!-- .col-xs-12 .col-md-2 -->

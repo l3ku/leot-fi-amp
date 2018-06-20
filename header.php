@@ -36,6 +36,17 @@ if ( ! defined('ABSPATH') ) exit;
       - Remove unnecessary styles
       - Use classes not ID's */
       /*******************************
+       *         UNIVERSAL           *
+       ******************************/
+      body {
+        font-family: 'Raleway', sans-serif;
+        margin: 0;
+      }
+      .center-container {
+        margin: 0 auto;
+        width: 50%;
+      }
+      /*******************************
        *          HEADER             *
        ******************************/
       #header-menu {
@@ -54,10 +65,6 @@ if ( ! defined('ABSPATH') ) exit;
       .nav-container {
         margin: 0 auto;
       }
-      .navbar-nav {
-        margin: 0 auto;
-        width: 50%;
-      }
       .navbar-nav>ul {
         margin: 0 auto;
         text-align: center;
@@ -66,23 +73,21 @@ if ( ! defined('ABSPATH') ) exit;
       .navbar-nav>li>a:hover, .navbar-nav>li>a:active, .navbar-nav>li>a:focus {
         background-color: rgba(255, 0, 0, 0);
       }
-      #header-title-container {
+      .header-title-container {
         padding-top: 7.5em;
-        width: 50%;
-        margin: 0 auto;
       }
-      #header-title {
+      .header-title {
         font-size: 5em;
         font-weight: bold;
         font-family: 'Dancing Script', sans-serif;
         text-align: center;
         margin: 0 auto;
       }
-      #header-title>a, #header-title>a:hover {
+      .header-title>a, .header-title>a:hover {
         text-decoration: none;
         color: black;
       }
-      #header-description {
+      .header-description {
         color: black;
         font-size: 1.5em;
         text-align: center;
@@ -100,7 +105,7 @@ if ( ! defined('ABSPATH') ) exit;
         min-height: 300px;
         font-size: 1.5em;
       }
-      #personal-image {
+      .personal-image {
         margin: 0 auto;
         margin-bottom: 1em;
         max-height: 10em;
@@ -151,89 +156,6 @@ if ( ! defined('ABSPATH') ) exit;
       }
 
       /*******************************
-       *         PROJECTS            *
-       ******************************/
-      .project-wrapper {
-        padding: 0 4em;
-        background-color: #ececec;
-        color: black;
-      }
-      .project-row {
-        margin: 0 auto;
-        margin-top: 3em;
-        margin-bottom: 3em;
-        max-width: 1000px;
-      }
-      .project-preview {
-        font-size: 1.15em;
-        margin-bottom: 3em;
-      }
-      .project-preview-image {
-        border-radius: 10px;
-      }
-      .project-preview-title {
-        text-align: center;
-        font-size: 3em;
-        margin-bottom: 0.5em;
-      }
-      .project-preview-title-link {
-        color: black;
-        -o-transition:.5s;
-        -ms-transition:.5s;
-        -moz-transition:.5s;
-        -webkit-transition:.5s;
-      }
-      .project-preview-title-link:hover {
-        color: white;
-        text-decoration: none;
-      }
-      .project-read-more {
-        color: black;
-      }
-      .project-read-more:hover {
-        color: #16D4DA;
-      }
-      .projects-hr {
-        border: 0;
-        border-top: 1px solid white;
-      }
-
-      /*******************************
-       *          RESUME             *
-       ******************************/
-      .cv-wrapper {
-        padding: 30px;
-        background-color: #ececec;
-        color: black;
-      }
-      .cv-personal-image {
-        border-radius: 10px;
-        margin-top: 20px;
-        max-height: 10em;
-        margin: 0 auto;
-      }
-      .work-experience-wrapper {
-        margin-top: 20px;
-      }
-      .cv-row-image {
-        padding: 2em;
-        margin: 0 auto;
-      }
-      .cv-row-image {
-        max-width: 80%;
-      }
-
-      /*******************************
-       *       CONTACT PAGE          *
-       ******************************/
-      .contact-page-wrapper {
-        padding: 30px;
-        margin: 0 auto;
-        background-color: #ececec;
-        color: black;
-      }
-
-      /*******************************
        *           FOOTER            *
        ******************************/
       .footer-wrapper {
@@ -243,12 +165,12 @@ if ( ! defined('ABSPATH') ) exit;
         width: 50%;
         margin-top: 2em;
       }
-      #footer-copyright {
+      .footer-copyright {
         font-size: 1.2em;
         color: black;
         text-align: center;
       }
-      #footer-copyright>a{
+      .footer-copyright>a{
         color: black;
       }
       .social-media-wrapper {
@@ -276,28 +198,6 @@ if ( ! defined('ABSPATH') ) exit;
       }
       .twitter-link:hover, .facebook-link:hover, .github-link:hover, .linkedin-link:hover {
         opacity: 1;
-      }
-
-      /*******************************
-       *         SINGLE POST         *
-       ******************************/
-      .content-area {
-        padding-top: 20px;
-        padding: 1.5em;;
-        background-color: #ececec;
-      }
-
-      /*******************************
-       *         UNIVERSAL           *
-       ******************************/
-      body {
-        font-family: 'Raleway', sans-serif;
-        margin: 0;
-      }
-      .leotoikka-wrapper {
-        padding: 8em 0;
-        background-color: #ececec;
-        color: black;
       }
 
       /*******************************
@@ -362,13 +262,13 @@ if ( ! defined('ABSPATH') ) exit;
     <header>
 
       <!-- Header title and description -->
-      <div id="header-title-container">
-        <h1 id="header-title">
+      <div class="center-container header-title-container">
+        <h1 class="header-title">
           <a href="<?php echo get_option('home'); ?>">
-            <?php bloginfo('name') ?>
+            <?php bloginfo('name'); ?>
           </a>
         </h1>
-        <h2 id="header-description"><?php bloginfo('description'); ?></h2>
+        <h2 class="header-description"><?php bloginfo('description'); ?></h2>
       </div><!-- .header-title-container -->
 
     </header>
