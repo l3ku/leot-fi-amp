@@ -50,8 +50,18 @@ if ( ! defined('ABSPATH') ) exit;
       /*******************************
        *          HEADER             *
        ******************************/
-      #header-menu {
+       .nav-menu {
+         margin-right: 5em;
+       }
+      .nav-menu li {
         list-style-type: none;
+      }
+      .nav-menu li a, .nav-menu li a:visited {
+        color: black;
+        text-decoration: none;
+        float: left;
+        font-size: 1.75em;
+        padding-top: 1em;
       }
       .nav-menu-toggle {
         float: right;
@@ -254,16 +264,19 @@ if ( ! defined('ABSPATH') ) exit;
   </head>
 
   <body <?php body_class(); ?>>
+
     <!-- Header nav menu -->
-    <amp-sidebar id="sidebar1" layout="nodisplay" side="right">
-      <?php
-      wp_nav_menu(
-        array(
-          'theme_location' => 'primary',
-          'container' => false
-        )
-      );
-      ?>
+    <amp-sidebar id="sidebar" layout="nodisplay" side="right">
+      <div class="nav-menu">
+        <?php
+        wp_nav_menu(
+          array(
+            'theme_location' => 'primary',
+            'container' => false
+          )
+        );
+        ?>
+      </div>
     </amp-sidebar>
     <a href="#" on='tap:sidebar.open' class="nav-menu-toggle">
       <amp-img src="<?php echo get_template_directory_uri() . '/images/menu.png'; ?>" height="35"
