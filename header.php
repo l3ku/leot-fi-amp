@@ -46,11 +46,17 @@ if ( ! defined('ABSPATH') ) exit;
         margin: 0 auto;
         width: 50%;
       }
+
       /*******************************
        *          HEADER             *
        ******************************/
       #header-menu {
         list-style-type: none;
+      }
+      .nav-menu-toggle {
+        float: right;
+        margin-top: 1em;
+        margin-right: 1em;
       }
       .header-image {
         background-position: center center;
@@ -240,6 +246,7 @@ if ( ! defined('ABSPATH') ) exit;
     <meta name="msapplication-navbutton-color" content="black">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
+    <!-- Various meta -->
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
@@ -258,9 +265,12 @@ if ( ! defined('ABSPATH') ) exit;
       );
       ?>
     </amp-sidebar>
+    <a href="#" on='tap:sidebar.open' class="nav-menu-toggle">
+      <amp-img src="<?php echo get_template_directory_uri() . '/images/menu.png'; ?>" height="35"
+        width="35" alt="<?php __('Menu', 'leotoikka'); ?>"></amp-img>
+    </a>
 
     <header>
-
       <!-- Header title and description -->
       <div class="center-container header-title-container">
         <h1 class="header-title">
@@ -270,5 +280,4 @@ if ( ! defined('ABSPATH') ) exit;
         </h1>
         <h2 class="header-description"><?php bloginfo('description'); ?></h2>
       </div><!-- .header-title-container -->
-
     </header>
