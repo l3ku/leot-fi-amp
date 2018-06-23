@@ -61,7 +61,7 @@ if ( ! defined('ABSPATH') ) exit;
         text-decoration: none;
         float: left;
         font-size: 1.75em;
-        padding-top: 1em;
+        margin-top: 1em;
       }
       .nav-menu-toggle {
         float: right;
