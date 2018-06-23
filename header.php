@@ -32,9 +32,7 @@ if ( ! defined('ABSPATH') ) exit;
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway">
     <style amp-custom>
       /* @TODO for CSS:
-      - Minify all styles, use Sass in development
-      - Remove unnecessary styles
-      - Use classes not ID's */
+      - Minify all styles, use Sass in development*/
       /*******************************
        *         UNIVERSAL           *
        ******************************/
@@ -188,6 +186,7 @@ if ( ! defined('ABSPATH') ) exit;
       }
       .footer-copyright>a{
         color: black;
+        text-decoration: none;
       }
       .social-media-wrapper {
         margin: 0 auto;
