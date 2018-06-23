@@ -251,6 +251,9 @@ if ( ! defined('ABSPATH') ) exit;
       <?php if ( !empty( wp_title( '', false ) ) ) echo wp_title( '', false ); ?>
     </title>
 
+    <!-- Register favicon -->
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
+
     <!-- Black browser bar on mobile -->
     <meta name="theme-color" content="black">
     <meta name="msapplication-navbutton-color" content="black">
