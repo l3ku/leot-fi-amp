@@ -12,7 +12,7 @@ if ( ! defined('ABSPATH') ) exit;
 get_header();
 ?>
 
-<div class="container-fluid content-area">
+<div class="center-container content-area">
   <?php while ( have_posts() ): the_post(); ?>
     <article class="single-post">
       <h2 class="post-title">
