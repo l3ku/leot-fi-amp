@@ -57,14 +57,14 @@ if ( ! defined('ABSPATH') ) exit;
       .nav-menu li a, .nav-menu li a:visited {
         color: black;
         text-decoration: none;
-        float: left;
+        float: right;
         font-size: 1.75em;
         margin-top: 1em;
       }
       .nav-menu-toggle {
-        float: right;
-        margin-top: 1em;
-        margin-right: 1em;
+        float: left;
+        margin-top: 1.5em;
+        margin-left: 1.5em;
         outline: 0;
       }
       .header-image {
@@ -269,7 +269,7 @@ if ( ! defined('ABSPATH') ) exit;
   <body <?php body_class(); ?>>
 
     <!-- Header nav menu -->
-    <amp-sidebar id="sidebar" layout="nodisplay" side="right">
+    <amp-sidebar id="sidebar" layout="nodisplay" side="left">
       <a href="#" on='tap:sidebar.close' class="nav-menu-toggle">
         <amp-img src="<?php echo get_template_directory_uri() . '/images/menu-close.png'; ?>" height="25"
           width=25 alt="<?php __('Menu', 'leotoikka'); ?>"></amp-img>
