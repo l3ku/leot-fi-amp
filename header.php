@@ -270,10 +270,6 @@ if ( ! defined('ABSPATH') ) exit;
 
     <!-- Header nav menu -->
     <amp-sidebar id="sidebar" layout="nodisplay" side="left">
-      <a href="#" on='tap:sidebar.close' class="nav-menu-toggle">
-        <amp-img src="<?php echo get_template_directory_uri() . '/images/menu-close.png'; ?>" height="25"
-          width=25 alt="<?php __('Menu', 'leotoikka'); ?>"></amp-img>
-      </a>
       <div class="nav-menu">
         <?php
         wp_nav_menu(
@@ -287,7 +283,7 @@ if ( ! defined('ABSPATH') ) exit;
     </amp-sidebar>
     <a href="#" on='tap:sidebar.open' class="nav-menu-toggle">
       <amp-img src="<?php echo get_template_directory_uri() . '/images/menu-open.png'; ?>" height="35"
-        width="35" alt="<?php __('Menu', 'leotoikka'); ?>"></amp-img>
+        width="35" alt="<?php __('Open menu', 'leotoikka'); ?>"></amp-img>
     </a>
 
     <header>
