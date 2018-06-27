@@ -270,16 +270,18 @@ if ( ! defined('ABSPATH') ) exit;
 
     <!-- Header nav menu -->
     <amp-sidebar id="sidebar" layout="nodisplay" side="left">
-      <div class="nav-menu">
-        <?php
-        wp_nav_menu(
-          array(
-            'theme_location' => 'primary',
-            'container' => false
-          )
-        );
-        ?>
-      </div>
+      <amp-img class="personal-image" height="80px" width="80px"
+        src="<?php echo esc_url(get_option('profile_picture')); ?>"
+        alt="<?php esc_attr_e('Picture of me', 'leotoikka'); ?>">
+      </amp-img>
+      <?php
+      wp_nav_menu(
+        array(
+          'theme_location' => 'primary',
+          'container' => false
+        )
+      );
+      ?>
     </amp-sidebar>
     <a href="#" on='tap:sidebar.open' class="nav-menu-toggle">
       <amp-img src="<?php echo get_template_directory_uri() . '/images/menu-open.png'; ?>" height="35"
