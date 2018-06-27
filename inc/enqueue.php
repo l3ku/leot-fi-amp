@@ -44,3 +44,11 @@ function portfolio_load_textdomain() {
   load_theme_textdomain('leotoikka', get_template_directory() . '/languages');
 }
 add_action('after_setup_theme', 'portfolio_load_textdomain');
+
+/**
+ * Enqueue frontend styles.
+ */
+function portfolio_enqueue_frontend_styles() {
+  require_once get_template_directory() . '/assets/css/frontend.css';
+}
+add_action('leotfi_amp_custom_styles', 'portfolio_enqueue_frontend_styles');
