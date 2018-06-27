@@ -8,6 +8,9 @@
 // Deny direct access
 if ( ! defined('ABSPATH') ) exit;
 
+/**
+ * Enqueue all admin scripts and styles.
+ */
 function portfolio_enqueue_admin_scripts() {
   wp_enqueue_media();
 
@@ -36,10 +39,12 @@ function portfolio_enqueue_admin_scripts() {
     null,
     'all'
   );
-
 }
 add_action('admin_enqueue_scripts', 'portfolio_enqueue_admin_scripts');
 
+/**
+ * Load theme textdomain.
+ */
 function portfolio_load_textdomain() {
   load_theme_textdomain('leotoikka', get_template_directory() . '/languages');
 }
