@@ -17,7 +17,7 @@ function portfolio_enqueue_admin_scripts() {
   // Localize and enqueue admin JavaScript
   wp_register_script(
     'portfolio-admin-script',
-    get_template_directory_uri() . '/assets/dist/js/portfolio.admin.min.js',
+    get_template_directory_uri() . '/assets/js/portfolio.admin.min.js',
     array('jquery'),
     '1.0.0',
     true
@@ -35,7 +35,7 @@ function portfolio_enqueue_admin_scripts() {
 
   wp_enqueue_style(
     'portfolio-admin-css',
-    get_template_directory_uri() . '/assets/dist/css/admin.min.css',
+    get_template_directory_uri() . '/assets/css/admin.css',
     null,
     'all'
   );
