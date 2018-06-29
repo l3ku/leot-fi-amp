@@ -60,7 +60,12 @@ if ( ! defined('ABSPATH') ) exit;
     <!-- Header nav menu -->
     <amp-sidebar id="sidebar" layout="nodisplay" side="left">
       <amp-img class="personal-image" height="80px" width="80px"
-        src="<?php echo esc_url(get_option('profile_picture')); ?>"
+        <?php $profile_picture = get_option('profile_picture'); ?>
+        src="<?php if ( ! empty($profile_picture) ) : ?>
+          <?php echo $profile_picture; ?>
+        <?php else : ?>
+          <?php echo get_template_directory_uri() . '/images/profile.jpg'; ?>
+        <?php endif; ?>"
         alt="<?php esc_attr_e('Picture of me', 'leotoikka'); ?>">
       </amp-img>
       <?php
