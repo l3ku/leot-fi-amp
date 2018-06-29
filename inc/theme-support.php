@@ -11,7 +11,7 @@ if ( ! defined('ABSPATH') ) exit;
 add_theme_support(
   'custom-header',
   array(
-    'default-image' => get_template_directory_uri() . '/images/apple-camera-desk-office.jpg',
+    'default-image' => get_template_directory_uri() . '/images/header-default.jpg',
   )
 );
 

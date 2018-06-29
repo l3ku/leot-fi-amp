@@ -11,6 +11,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
+  background-image: linear-gradient(to left, white,  rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 65%, white 100%), url(<?php header_image(); ?>)
 }
 .center-container {
   margin: 0 auto;
@@ -76,10 +77,10 @@ body {
 }
 .header-title>a, .header-title>a:hover {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .header-description {
-  color: black;
+  color: white;
   font-size: 1.5em;
   text-align: center;
   font-family: 'Raleway', sans-serif;
@@ -106,6 +107,7 @@ body {
   display: block;
 }
 .homeinfo-text {
+  color: white;
   text-align: center;
   margin-bottom: 1em;
 }
@@ -162,11 +164,11 @@ body {
 }
 .footer-copyright {
   font-size: 1.2em;
-  color: black;
+  color: white;
   text-align: center;
 }
 .footer-copyright>a{
-  color: black;
+  color: white;
   text-decoration: none;
 }
 .social-media-wrapper {
