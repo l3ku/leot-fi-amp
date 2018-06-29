@@ -1,9 +1,10 @@
+<?php
 /**
  * Frontend style CSS file
  *
  * @package leot-fi-amp
  */
-
+?>
 /*******************************
  *         UNIVERSAL           *
  ******************************/
@@ -183,6 +184,19 @@ body {
   height: 50px;
   width: 45px;
 }
+.twitter-logo {
+  background-image: url(<?php echo get_template_directory_uri() . '/images/twitter.png'; ?>)
+}
+.facebook-logo {
+  background-image: url(<?php echo get_template_directory_uri() . '/images/facebook.png'; ?>)
+}
+.github-logo {
+  background-image: url(<?php echo get_template_directory_uri() . '/images/github.png'; ?>)
+}
+.linkedin-logo {
+  background-image: url(<?php echo get_template_directory_uri() . '/images/linkedin.png'; ?>)
+}
+
 .twitter-link, .facebook-link, .github-link, .linkedin-link {
   opacity: 0.5;
   -o-transition:.5s;
