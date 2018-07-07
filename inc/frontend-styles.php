@@ -11,7 +11,8 @@
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
-  background-image: linear-gradient(to left, white,  rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 65%, white 100%), url(<?php header_image(); ?>)
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.3) 75%,  rgba(255, 255, 255, 0.15) 100%), url(<?php header_image(); ?>);
+  background-position: center;
 }
 .center-container {
   margin: 0 auto;
