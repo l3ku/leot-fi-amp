@@ -70,7 +70,7 @@ body {
   padding-top: 7.5em;
 }
 .header-title {
-  font-size: 5em;
+  font-size: 5.5em;
   font-weight: bold;
   font-family: 'Dancing Script', sans-serif;
   text-align: center;
@@ -82,7 +82,7 @@ body {
 }
 .header-description {
   color: white;
-  font-size: 1.5em;
+  font-size: 1.75em;
   text-align: center;
   font-family: 'Raleway', sans-serif;
   margin-top: 0.5em;
@@ -109,6 +109,7 @@ body {
 }
 .homeinfo-text {
   color: white;
+  font-size: 1.25em;
   text-align: center;
   margin-bottom: 1em;
 }
@@ -161,10 +162,10 @@ body {
   padding: 1em;
   margin: 0 auto;
   width: 50%;
-  margin-top: 2em;
+  margin-top: 2.2em;
 }
 .footer-copyright {
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: white;
   text-align: center;
 }
@@ -184,8 +185,8 @@ body {
   background-repeat:no-repeat;
   background-size:100% 100%;
   padding-left: 4em;
-  height: 50px;
-  width: 45px;
+  height: 55px;
+  width: 50px;
 }
 .twitter-logo {
   background-image: url(<?php echo get_template_directory_uri() . '/images/twitter.png'; ?>)
